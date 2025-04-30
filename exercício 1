@@ -1,0 +1,13 @@
+num1 = float(input("Digite o primeiro numero: "))
+num2 = float(input("Digite o segundo numero: "))
+
+soma = num1 + num2
+media = (num1 + num2) / 2
+diferenca_absoluta = abs(num1 - num2)
+maior = max(num1, num2)
+
+print('\nResultados:')
+print(f"Soma: {soma}")
+print(f"Media: {media}")
+print(f"Diferenca_Absoluta:{diferenca_absoluta}")
+print(f"Número maior: {maior}")
