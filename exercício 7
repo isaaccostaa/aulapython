@@ -1,0 +1,16 @@
+import string
+
+frase = input("Digite uma frase: ")
+
+# Remove pontuação e converte para minúsculas
+frase_limpa = frase.translate(str.maketrans('', '', string.punctuation)).lower()
+
+palavras = frase_limpa.split()
+frequencia = {}
+
+for palavra in palavras:
+    frequencia[palavra] = frequencia.get(palavra, 0) + 1
+
+print("Frequência de palavras:")
+for palavra, contagem in frequencia.items():
+    print(f"{palavra}: {contagem}")
