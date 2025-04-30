@@ -1,13 +1,10 @@
-num1 = float(input("Digite o primeiro numero: "))
-num2 = float(input("Digite o segundo numero: "))
+nota = float(input("Digite a nota (0 a 100): "))
 
-soma = num1 + num2
-media = (num1 + num2) / 2
-diferenca_absoluta = abs(num1 - num2)
-maior = max(num1, num2)
-
-print('\nResultados:')
-print(f"Soma: {soma}")
-print(f"Media: {media}")
-print(f"Diferenca_Absoluta:{diferenca_absoluta}")
-print(f"Número maior: {maior}")
+if nota >= 90:
+    print("Classificação: Excelente")
+elif nota >= 70:
+    print("Classificação: Bom")
+elif nota >= 50:
+    print("Classificação: Regular")
+else:
+    print("Classificação: Reprovado")
