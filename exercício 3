@@ -1,0 +1,9 @@
+# Gera os 20 primeiros números da sequência de Fibonacci
+fibonacci = [0, 1]
+for _ in range(18):
+    proximo = fibonacci[-1] + fibonacci[-2]
+    fibonacci.append(proximo)
+
+# Exibe a lista e a soma dos números
+print("Sequência de Fibonacci:", fibonacci)
+print("Soma dos elementos:", sum(fibonacci))
