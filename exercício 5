@@ -1,0 +1,6 @@
+palavras = input("Digite palavras separadas por espaço: ").split()
+
+# Filtrar palavras com mais de 5 letras que começam com vogal
+resultado = [p for p in palavras if len(p) > 5 and p[0].lower() in 'aeiou']
+
+print("Palavras filtradas:", resultado)
